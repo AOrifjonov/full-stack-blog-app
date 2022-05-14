@@ -10,7 +10,7 @@ export default function SinglePost() {
   const { user } = useContext(Context)
   const { postId } = useParams()
   const [post, setPost] = useState([])
-  const PF = 'https://afzalbek-blog.herokuapp.com/images/';
+  const PF = 'https://my-story-uz.herokuapp.com/images/';
   const [title, setTitle] = useState('')
   const [desc, setDesc] = useState('')
   const [updateMode, setUpdateMode] = useState(false)
