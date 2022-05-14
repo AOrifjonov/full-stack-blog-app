@@ -26,7 +26,7 @@ export default function Write() {
       data.append("file", file)
       newPost.photo = filename;
       try {
-        await axios.post('/api/upload', data)
+        await axiosInstance.post('/api/upload', data)
       } catch (err) {
         console.log(err);
       }
