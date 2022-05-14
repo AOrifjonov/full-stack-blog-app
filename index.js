@@ -49,7 +49,7 @@ app.use(express.static(path.join("/client")));
 app.use(express.static(path.join("/client/build/")));
 
 app.get('*', function (req, res) {
-  const index = path.join('./client/build/index.html');
+  const index = path.join('/client/build/index.html');
   res.sendFile(index);
 });
 
