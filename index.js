@@ -47,11 +47,11 @@ app.use('/api/categories', categoriesRoute);
 
 app.use(express.static(path.join(__dirname, "/client")));
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '/client/build', 'index.js'));
+    res.sendFile(path.join(__dirname, '/client/build', 'index.html'));
 });
 
 app.listen(process.env.PORT || 5000, ()=> {
-    console.log('Server has been started on 5000 port');
+    console.log('server ishga tushdi');
 })
 
 module.exports = app;
