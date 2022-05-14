@@ -45,9 +45,12 @@ app.use('/api/users', usersRoute);
 app.use('/api/posts', postsRoute);
 app.use('/api/categories', categoriesRoute);
 
-app.use(express.static(path.join(__dirname, "/client")));
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../client/build', 'index.html'));
+app.use(express.static(path.join("/client")));
+app.use(express.static(path.join("/client/build/")));
+
+app.get('*', function (req, res) {
+  const index = path.join('./client/build/index.html');
+  res.sendFile(index);
 });
 
 app.listen(process.env.PORT || 5000, ()=> {
