@@ -45,11 +45,11 @@ app.use('/api/users', usersRoute);
 app.use('/api/posts', postsRoute);
 app.use('/api/categories', categoriesRoute);
 
-app.use(express.static(path.join("/client")));
-app.use(express.static(path.join("/client/build/")));
+app.use(express.static(path.join(__dirname, "/client")));
+app.use(express.static(path.join(__dirname, "/client/build/")));
 
 app.get('*', function (req, res) {
-  const index = path.join('/client/build/index.html');
+  const index = path.join(__dirname,'/client/build/index.html');
   res.sendFile(index);
 });
 
