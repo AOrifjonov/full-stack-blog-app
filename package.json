@@ -14,7 +14,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "heroku-postbuild": "cd client && npm install && npm run build"
+    "heroku-postbuild": "cd client && npm install && npm run dev"
   },
   "author": "Afzalbek Orifjonov",
   "license": "ISC"
