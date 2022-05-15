@@ -28,3 +28,23 @@
     margin-top: 85px;
     object-fit: cover;
 }
+
+@media (max-width: 530px) {
+    .headerImg {
+        width: 100%;
+        height: 300px;
+    }
+    .headerTitleSm {
+        top: 20%;
+    }
+    .headerTitleLg {
+        top: 25%;
+    }
+}
+
+@media (max-width: 460px) {
+    .headerImg {
+        width: 100%;
+        height: 240px;
+    }
+}

@@ -12,6 +12,8 @@
 
 .writeForm {
     position: relative;
+    padding: 15px;
+    padding-bottom: 25px;
 }
 
 .writeFormGroup {
@@ -59,4 +61,29 @@
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+}
+
+@media (max-width: 683px) {
+    .writeImg, .writeFormGroup {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 585px) {
+    .writeImg {
+        width: 85vw;
+        height: 270px;
+    }
+    .writeSubmit {
+        top: inherit;
+        left: 10px;
+        right: inherit;
+    }
+}
+
+@media (max-width: 450px) {
+    .writeImg {
+        width: 95vw;
+        height: 200px;
+    }
 }

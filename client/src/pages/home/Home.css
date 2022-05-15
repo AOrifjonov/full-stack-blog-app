@@ -1,3 +1,9 @@
 .home {
     display: flex;
 }
+
+@media (max-width: 745px) {
+    .home {
+        display: flex;flex-direction: column;
+    }
+}

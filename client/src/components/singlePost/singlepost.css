@@ -100,3 +100,10 @@
     right: 10px;
     top: 150px;
 }
+
+@media (max-width: 400px) {
+    .singlePostInfo {
+        display: flex;
+        flex-direction: column;
+    }
+}
